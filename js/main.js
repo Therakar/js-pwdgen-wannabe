@@ -2,10 +2,10 @@
 // input nome utente
 const firstName = prompt(`Inserisci il tuo nome`);
 
-// output in console nome utente
+// stampa in console nome utente
 console.log(firstName);
 
-// output nella pagina del nome utente
+// stampa nella pagina del nome utente
 document.getElementById(`first-name`).innerHTML = firstName;
 
 
@@ -14,10 +14,10 @@ document.getElementById(`first-name`).innerHTML = firstName;
 // input cognome utente
 const lastName = prompt(`Inserisci il tuo cognome`);
 
-// output in console cognome utente
+// stampa in console cognome utente
 console.log(lastName);
 
-// output nella pagina del cognome utente
+// stampa nella pagina del cognome utente
 document.getElementById(`last-name`).innerHTML = lastName;
 
 
@@ -26,8 +26,22 @@ document.getElementById(`last-name`).innerHTML = lastName;
 // input colore preferito utente
 const favColor = prompt(`Inserisci il tuo colore preferito`);
 
-// output in console colore preferito utente
+// stampa in console colore preferito utente
 console.log(favColor);
 
-// output nella pagina del colore preferito utente
+// stampa nella pagina del colore preferito utente
 document.getElementById(`fav-color`).innerHTML = favColor;
+
+
+// CREAZIONE PASSWORD
+// costante numero classe
+const classNumber = `76`;
+
+// creazione password
+const password = firstName + lastName + favColor + classNumber;
+
+// stampa in console la password
+console.log(password);
+
+// stampa nella pagina la password
+document.getElementById(`password`).innerHTML = password;
